@@ -205,4 +205,8 @@ $greenish-blue: #58caea;
     border-top-left-radius: 0;
     transform: skewY(0deg);
   }
+
+  &__form {
+    background-color: $light-grey;
+  }
 }

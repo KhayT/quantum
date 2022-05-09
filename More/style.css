@@ -143,3 +143,5 @@
     height: 100%;
     border-top-left-radius: 0;
     transform: skewY(0deg); }
+  .contact__form {
+    background-color: #f4f4f9; }

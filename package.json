@@ -4,11 +4,12 @@
   "description": "Quantum Website",
   "default": "Landing/index.html",
   "scripts": {
+    "watch:main": "node-sass sharedSass/main.scss style.css -w",
     "watch:landing": "node-sass Landing/sass/main.scss Landing/style.css -w",
     "watch:more": "node-sass More/sass/main.scss More/style.css -w",
     "watch:team": "node-sass Team/sass/main.scss Team/style.css -w",
     "watch:training": "node-sass Training/sass/main.scss Training/style.css -w",
-    "compile:css": "npm-run-all --parallel watch:landing watch:more watch:team watch:training"
+    "compile:css": "npm-run-all --parallel watch:main watch:landing watch:more watch:team watch:training"
   },
   "author": "Khadijah Abdulazeez",
   "license": "ISC",
