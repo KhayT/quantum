@@ -1,0 +1,108 @@
+$very-dark-blue: #16126f;
+$dark-blue: #350d8b;
+$light-blue: #766bfe;
+$light-grey: #f4f4f9;
+$greenish-blue: #58caea;
+
+.team {
+  background-color: $light-grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  padding: 3rem 5rem 1rem 5rem;
+  gap: 3rem;
+
+  &__text {
+    align-self: center;
+    h1 {
+      display: block;
+      font-weight: 600;
+    }
+    span {
+      display: block;
+    }
+    p {
+      width: 90%;
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+  }
+
+  img {
+    width: 30rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    padding: 2rem;
+
+    &__text {
+      align-self: start;
+    }
+
+    img {
+      align-self: end;
+      width: 80%;
+      height: auto;
+      max-width: 90%;
+    }
+  }
+}
+
+.people {
+  &__1,
+  &__2 {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem 5rem;
+    gap: 1rem;
+    justify-content: space-between;
+
+    img {
+      width: 16rem;
+      height: 18rem;
+    }
+  }
+
+  &__bio1 {
+    flex-basis: 50%;
+  }
+
+  &__bio2 {
+    flex-basis: 50%;
+    text-align: right;
+  }
+
+  &__bar {
+    height: 2px;
+    margin: 0 5rem;
+    background-color: black;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 650px) {
+    &__1,
+    &__2 {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    &__bar {
+      margin: 0 2rem;
+    }
+
+    img {
+      width: 50%;
+      height: 13rem;
+    }
+  }
+}

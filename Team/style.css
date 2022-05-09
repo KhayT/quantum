@@ -1,0 +1,71 @@
+.team {
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  padding: 3rem 5rem 1rem 5rem;
+  gap: 3rem; }
+  .team__text {
+    align-self: center; }
+    .team__text h1 {
+      display: block;
+      font-weight: 600; }
+    .team__text span {
+      display: block; }
+    .team__text p {
+      width: 90%;
+      font-size: 0.7rem;
+      font-weight: 500; }
+  .team img {
+    width: 30rem; }
+  @media screen and (max-width: 650px) {
+    .team {
+      flex-direction: column;
+      padding: 2rem; }
+      .team__text {
+        align-self: start; }
+      .team img {
+        align-self: end;
+        width: 80%;
+        height: auto;
+        max-width: 90%; } }
+
+.people__1, .people__2 {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  padding: 2rem 5rem;
+  gap: 1rem;
+  justify-content: space-between; }
+  .people__1 img, .people__2 img {
+    width: 16rem;
+    height: 18rem; }
+
+.people__bio1 {
+  flex-basis: 50%; }
+
+.people__bio2 {
+  flex-basis: 50%;
+  text-align: right; }
+
+.people__bar {
+  height: 2px;
+  margin: 0 5rem;
+  background-color: black; }
+
+.people h2 {
+  font-weight: 600; }
+
+.people p {
+  font-size: 0.75rem;
+  font-weight: 500; }
+
+@media screen and (max-width: 650px) {
+  .people__1, .people__2 {
+    width: 100%;
+    padding: 2rem; }
+  .people__bar {
+    margin: 0 2rem; }
+  .people img {
+    width: 50%;
+    height: 13rem; } }

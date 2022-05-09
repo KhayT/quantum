@@ -1,0 +1,108 @@
+$very-dark-blue: #16126f;
+$dark-blue: #350d8b;
+$light-blue: #766bfe;
+$light-grey: #f4f4f9;
+$greenish-blue: #58caea;
+
+.training {
+  background-color: $light-grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem 1rem 5rem;
+  gap: 3rem;
+
+  &__text {
+    align-self: center;
+
+    h1 {
+      display: block;
+      font-weight: 600;
+    }
+    span {
+      display: block;
+    }
+    p {
+      width: 85%;
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+  }
+
+  img {
+    width: 30rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    padding: 2rem;
+
+    &__text {
+      align-self: start;
+    }
+
+    img {
+      align-self: end;
+      width: 80%;
+      height: auto;
+      max-width: 90%;
+    }
+  }
+}
+
+.course {
+  width: 70%;
+  text-align: center;
+  margin: 3rem auto;
+  padding-bottom: 2rem;
+
+  & > div {
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    display: block;
+
+    span {
+      display: block;
+    }
+  }
+
+  &--heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  &__title {
+    position: absolute;
+    top: 45%;
+    right: 30%;
+    transform: translate(50%, -50%);
+    color: white;
+    letter-spacing: 3px;
+
+    font-size: 1rem;
+    font-weight: 300;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  h2 {
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 90%;
+  }
+}

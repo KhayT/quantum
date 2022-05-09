@@ -1,0 +1,67 @@
+.training {
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem 1rem 5rem;
+  gap: 3rem; }
+  .training__text {
+    align-self: center; }
+    .training__text h1 {
+      display: block;
+      font-weight: 600; }
+    .training__text span {
+      display: block; }
+    .training__text p {
+      width: 85%;
+      font-size: 0.7rem;
+      font-weight: 500; }
+  .training img {
+    width: 30rem; }
+  @media screen and (max-width: 650px) {
+    .training {
+      flex-direction: column;
+      padding: 2rem; }
+      .training__text {
+        align-self: start; }
+      .training img {
+        align-self: end;
+        width: 80%;
+        height: auto;
+        max-width: 90%; } }
+
+.course {
+  width: 70%;
+  text-align: center;
+  margin: 3rem auto;
+  padding-bottom: 2rem; }
+  .course > div {
+    position: relative; }
+  .course img {
+    width: 100%; }
+  .course h1 {
+    display: block; }
+    .course h1 span {
+      display: block; }
+  .course--heading {
+    font-size: 2.5rem;
+    font-weight: 500; }
+  .course__title {
+    position: absolute;
+    top: 45%;
+    right: 30%;
+    transform: translate(50%, -50%);
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: 300; }
+    .course__title span {
+      text-transform: uppercase;
+      font-weight: 600; }
+  .course h2 {
+    letter-spacing: 1px; }
+  .course p {
+    font-size: 0.7rem;
+    font-weight: 600; }
+  @media screen and (max-width: 425px) {
+    .course {
+      width: 90%; } }
